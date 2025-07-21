@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import MyForm from "./MyForm";
 
 export const ContactSection = () => {
   return (
@@ -20,31 +21,7 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="border-0 shadow-lg">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-6">
-                კონსულტაციის მიღება
-              </h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input placeholder="სახელი" />
-                  <Input placeholder="გვარი" />
-                </div>
-                <Input placeholder="ელ-ფოსტის მისამართი" type="email" />
-                <Input placeholder="ტელ. ნომერი" type="tel" />
-
-                <Textarea
-                  placeholder="მოგვიყევი თქვენი გეგმების შესახებ..."
-                  className="min-h-32"
-                />
-                <Button className="w-full" size="lg">
-                  კონსულტაციის მიღება
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
+          <MyForm />
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
