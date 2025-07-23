@@ -1,49 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Shield,
-  Clock,
-  Users,
-  Award,
-  FileCheck,
-  Headphones,
-} from "lucide-react";
+import { Clock, Users, Award, FileCheck, Headphones } from "lucide-react";
 
+import { FileUser, HandCoins } from "lucide-react";
 const features = [
   {
-    icon: Shield,
+    icon: FileUser,
     title: "სასურველი ვიზის კატეგორია",
-    description:
-      "Our proven track record speaks for itself with thousands of approved applications.",
+    description: "განსაზღვრეთ თქვენთვის სასურველი ვიზის კატეგორია",
   },
   {
     icon: Clock,
     title: "აპლიკაციის შევსება",
-    description:
-      "Streamlined process that saves you time while ensuring accuracy and compliance.",
+    description: "თქვენთან ერთად შევავსებთ DS-160 ფორმას",
   },
   {
-    icon: Users,
+    icon: HandCoins,
     title: "სავიზო მოსაკრებლის გადახდა",
-    description:
-      "Immigration attorneys and specialists with decades of combined experience.",
+    description: "მოსაკრებლის გადახდა ონლაინ მეთოდით ან ბანკში ვიზიტით",
   },
   {
     icon: Award,
     title: "სათანადო დოკუმენტაციის შეგროვება",
-    description:
-      "Over 10,000 satisfied clients who achieved their American dream with our help.",
+    description: "შესაბამისი დოკუმენტაციის მომზადება და შეგროვება",
   },
   {
     icon: Headphones,
     title: "ინტერვიუსთვის მომზადება",
-    description:
-      "Dedicated support team available to answer your questions throughout the process.",
+    description: "რჩევები თუ რა უნდა გავითვალისწინოთ ინტერვიუს პროცესის დროს",
   },
   {
     icon: FileCheck,
     title: "ვიზიტის ჩანიშვნა საელჩოში",
-    description:
-      "We handle all paperwork, forms, and supporting documents for your application.",
+    description: "თქვენთვის სასურველ დროს ვიზიტის ჩანიშვნა საელჩოში",
   },
 ];
 
@@ -53,10 +41,10 @@ export const WhyChooseSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            რატომ ჩვენ?
+            ჩვენი გუნდი
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            ჩვენ გაგიმარტივებთ კომპლექსურ პროცესს ამერიკის ვიზის მოსაპოვებლად!
+            გაგიმარტივებთ კომპლექსურ პროცესს ამერიკის ვიზის მოსაპოვებლად!
           </p>
         </div>
 

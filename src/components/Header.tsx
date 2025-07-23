@@ -31,8 +31,14 @@ export const Header = () => {
             კონტაქტი
           </a>
         </nav>
-
-        <Button className="md:flex">კონსულტაცია</Button>
+        <Button>
+          <a
+            href="https://calendly.com/info-usvisa-ge/visa-consultation"
+            target="_blank"
+          >
+            კონსულტაციის მიღება
+          </a>
+        </Button>
       </div>
     </header>
   );

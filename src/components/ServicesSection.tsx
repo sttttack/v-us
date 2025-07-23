@@ -17,41 +17,22 @@ import {
 
 const services = [
   {
-    icon: Briefcase,
-    title: "სამუშაო ვიზები",
-    description:
-      "H-1B, L-1, O-1, and other employment-based visas for professionals.",
-    types: ["H-1B", "L-1", "O-1", "TN"],
+    icon: Plane,
+    title: "ტურისტული ვიზები",
+    description: "ტურისტული და საქმიანი მიზნით მოგზაურობისთვის",
+    types: ["B-1", "B-2", "ESTA"],
   },
   {
     icon: GraduationCap,
     title: "სტუდენტური ვიზები",
-    description: "F-1 and M-1 visas for academic and vocational studies.",
+    description: "სტუდენტური ვიზა",
     types: ["F-1", "M-1", "J-1"],
   },
   {
-    icon: Heart,
-    title: "საოჯახო ვიზები",
-    description: "K-1 fiancé, spousal, and family reunification visas.",
-    types: ["K-1", "CR-1", "IR-1"],
-  },
-  {
-    icon: Users,
-    title: "ტურისტული ვიზები",
-    description: "B-1/B-2 visitor visas for business and pleasure travel.",
-    types: ["B-1", "B-2", "ESTA"],
-  },
-  {
-    icon: Plane,
-    title: "ტრანზიტული ვიზები",
-    description: "C-1 and other transit visas for connecting flights.",
-    types: ["C-1", "C-1/D"],
-  },
-  {
-    icon: Building,
-    title: "საინვესტიციო ვიზები",
-    description: "E-1, E-2, and EB-5 visas for investors and entrepreneurs.",
-    types: ["E-1", "E-2", "EB-5"],
+    icon: Briefcase,
+    title: "სამუშაო ვიზები",
+    description: "სპეციალისტებისთვის",
+    types: ["H-1B", "L-1", "O-1", "TN"],
   },
 ];
 

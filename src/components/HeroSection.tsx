@@ -29,7 +29,7 @@ export const HeroSection = () => {
             თქვენი გზა
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {" "}
-              ამერიკის შტატებისკენ
+              ამერიკის ვიზის მოსაპოვებლად
             </span>
           </h1>
 
@@ -43,8 +43,13 @@ export const HeroSection = () => {
               პროცესის დაწყება
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button variant="hero" size="lg" className="text-lg">
-              კონსულტაციის მიღება
+            <Button variant="default" size="lg" className="text-lg">
+              <a
+                href="https://calendly.com/info-usvisa-ge/visa-consultation"
+                target="_blank"
+              >
+                კონსულტაციის მიღება
+              </a>
             </Button>
           </div>
 

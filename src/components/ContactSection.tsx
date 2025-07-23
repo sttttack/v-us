@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import MyForm from "./MyForm";
+import Imap from "./Imap";
 
 export const ContactSection = () => {
   return (
@@ -35,12 +36,9 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">
-                      საკონტაქტო ნომერი
+                      დაგვიკავშირდით
                     </h4>
                     <p className="text-muted-foreground">+995 591 06 77 00</p>
-                    <p className="text-sm text-muted-foreground">
-                      ორშაბათი - პარასკევი, 10:00 - 18:00
-                    </p>
                   </div>
                 </div>
 
@@ -53,20 +51,7 @@ export const ContactSection = () => {
                     <p className="text-muted-foreground">info@usvisa.ge</p>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">
-                      ჩვენი ოფისი
-                    </h4>
-                    <p className="text-muted-foreground">
-                      ჭავჭავაძის 21ა, თბილისი, საქართველო
-                    </p>
-                  </div>
-                </div>
+                <Imap />
               </div>
             </div>
           </div>
