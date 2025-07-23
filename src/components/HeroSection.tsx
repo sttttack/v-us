@@ -25,7 +25,7 @@ export const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
             თქვენი გზა
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {" "}
