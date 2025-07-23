@@ -10,27 +10,6 @@ export const Header = () => {
             <img src={logo} alt="Logo" className="h-14 w-auto" />
           </a>
         </div>
-
-        <nav className="hidden md:flex items-center space-x-6">
-          <a
-            href="/"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            სერვისები
-          </a>
-          <a
-            href="#about"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ჩვენს შესახებ
-          </a>
-          <a
-            href="#contact"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            კონტაქტი
-          </a>
-        </nav>
         <Button>
           <a
             href="https://calendly.com/info-usvisa-ge/visa-consultation"
