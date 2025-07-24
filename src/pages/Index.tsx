@@ -4,6 +4,7 @@ import { WhyChooseSection } from "@/components/WhyChooseSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Header } from "@/components/Header";
 import { ScrollUpButton } from "@/components/ScrollUpButton";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <WhyChooseSection />
       <ContactSection />
       <ScrollUpButton />
+      <Footer />
     </div>
   );
 };
