@@ -79,7 +79,7 @@ export const ContactSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="w-full h-64 overflow-hidden rounded-md"
+              className="w-full h-auto shadow-xl rounded-lg"
             >
               <Imap />
             </motion.div>
