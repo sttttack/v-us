@@ -58,7 +58,9 @@ export const ContactSection = () => {
                   <h4 className="font-semibold text-foreground">
                     დაგვიკავშირდით
                   </h4>
-                  <p className="text-muted-foreground">+995 591 06 77 00</p>
+                  <a href="tel:+995591067700" className="text-muted-foreground">
+                    +995 591 06 77 00
+                  </a>
                 </div>
               </div>
 
