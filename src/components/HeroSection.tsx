@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/visa-hero.jpg";
+import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -17,28 +18,47 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="max-w-3xl">
-          <div className="mb-6">
+        <div className="max-w-3xl space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+          >
             <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <CheckCircle className="w-4 h-4 mr-2" />
               თქვენი სანდო სავიზო მომსახურება
             </span>
-          </div>
+          </motion.div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+          <motion.h1
+            className="text-4xl md:text-5xl font-bold text-foreground leading-tight"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.3 }}
+          >
             თქვენი გზა
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {" "}
               ამერიკის ვიზის მოსაპოვებლად
             </span>
-          </h1>
+          </motion.h1>
 
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <motion.p
+            className="text-xl text-muted-foreground leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.6 }}
+          >
             გაიარეთ კონსულტაცია დღესვე! მიიღეთ ინფორმაცია, თუ როგორ მოიპოვოთ
             ამერიკის ვიზა და ამ ყველაფერში ჩვენ დაგეხმარებით.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.9 }}
+          >
             <Button variant="default" size="lg" className="text-lg">
               პროცესის დაწყება
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -47,13 +67,19 @@ export const HeroSection = () => {
               <a
                 href="https://calendly.com/info-usvisa-ge/visa-consultation"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 კონსულტაციის მიღება
               </a>
             </Button>
-          </div>
+          </motion.div>
 
-          <div className="flex items-center gap-8 text-sm text-muted-foreground">
+          <motion.div
+            className="flex items-center gap-8 text-sm text-muted-foreground"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, delay: 1.2 }}
+          >
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 text-primary mr-2" />
               სწრაფი მომსახურება
@@ -64,9 +90,9 @@ export const HeroSection = () => {
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 text-primary mr-2" />
-              სასურველ დროს ვიტიზიტის ჩანიჩვნა
+              სასურველ დროს ვიზიტის ჩანიშვნა
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

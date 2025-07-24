@@ -1,7 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, Users, Award, FileCheck, Headphones } from "lucide-react";
+import {
+  Clock,
+  Users,
+  Award,
+  FileCheck,
+  Headphones,
+  FileUser,
+  HandCoins,
+} from "lucide-react";
+import { motion } from "framer-motion";
 
-import { FileUser, HandCoins } from "lucide-react";
 const features = [
   {
     icon: FileUser,
@@ -39,35 +47,50 @@ export const WhyChooseSection = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        {/* Heading */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1 }}
+        >
           <h2 className="text-4xl font-bold text-foreground mb-4">
             ჩვენი გუნდი
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             გაგიმარტივებთ კომპლექსურ პროცესს ამერიკის ვიზის მოსაპოვებლად!
           </p>
-        </div>
+        </motion.div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature) => {
+          {features.map((feature, index) => {
             const IconComponent = feature.icon;
+
             return (
-              <Card
+              <motion.div
                 key={feature.title}
-                className="text-center border-0 shadow-md hover:shadow-lg transition-shadow duration-300"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.2 + index * 0.2, // staggered
+                }}
               >
-                <CardContent className="pt-8">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="w-8 h-8 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+                <Card className="text-center border-0 shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+                  <CardContent className="pt-8 flex flex-col items-center justify-start h-full">
+                    <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6">
+                      <IconComponent className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             );
           })}
         </div>
